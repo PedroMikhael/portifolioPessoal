@@ -1,111 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Pedro Mikhael</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Pedro Mikhael</title>
+  <meta name="description" content="Portfólio de Pedro Mikhael - Desenvolvedor Java e React. Projetos, contato e informações." />
+  <meta property="og:title" content="Portfólio | Pedro Mikhael" />
+  <meta property="og:description" content="Projetos desenvolvidos em Java, React e Spring Boot." />
+  <meta property="og:image" content="media/fotoPerfil.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">Pedro Mikhael</div>
-            <ul class="nav-list">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <div class="mobile-menu-icon">
-                <button onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">Pedro Mikhael</div>
+      <ul class="nav-list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <main>
+  <main>
     <section id="home">
-        <div class="home-text">
-            <h1>Olá, eu sou Pedro Mikhael</h1>
-            <p>Estudante de Ciência da Computação apaixonado por resolver problemas e construir o futuro com tecnologia.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/pedro-mikhael-maia/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/PedroMikhael" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
+      <div class="home-text" data-aos="fade-right">
+        <h1>Olá, eu sou Pedro Mikhael</h1>
+        <p>Estudante de Ciência da Computação apaixonado por resolver problemas e construir o futuro com tecnologia.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/pedro-mikhael-maia/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/PedroMikhael" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
-        <div class="home-img">
-            <img src="media/fotoPerfil.jpg" alt="Foto de Pedro Mikhael">
-        </div>
+      </div>
+      <div class="home-img" data-aos="fade-left">
+        <img src="media/fotoPerfil.jpg" alt="Foto de Pedro Mikhael" />
+      </div>
     </section>
 
     <section id="sobre" class="hidden">
-        <h2>Sobre Mim</h2>
-        <p>
-            Atualmente no segundo semestre de Ciência da Computação na UECE, possuo uma base sólida em lógica e desenvolvimento back-end com Java, Python e C. Estou buscando ativamente uma oportunidade de estágio para aplicar minhas habilidades, colaborar em projetos desafiadores e contribuir para o desenvolvimento de soluções tecnológicas inovadoras.
-        </p>
+      <h2>Sobre Mim</h2>
+      <p>
+        Atualmente no segundo semestre de Ciência da Computação na UECE, possuo uma base sólida em lógica e desenvolvimento back-end com Java, Python e C. Estou buscando ativamente uma oportunidade de estágio para aplicar minhas habilidades, colaborar em projetos desafiadores e contribuir para o desenvolvimento de soluções tecnológicas inovadoras.
+      </p>
     </section>
 
     <section id="projetos" class="hidden">
-        <h2>Meus Projetos</h2>
-        <div class="projetos-grid">
+      <h2>Meus Projetos</h2>
+      <div class="projetos-grid">
 
-            <div class="projeto-card">
-                <img src="media/SistemaHospitalar.png" alt="Imagem do Projeto Hospitalar">
-                <h3>Sistema de Gestão Hospitalar</h3>
-                <p>Aplicação full-stack para gerenciamento de pacientes e médicos, com sistema de login e agendamento. **(Em Desenvolvimento)**</p>
-                <p class="tech-stack"><strong>Tecnologias:</strong> Java, Spring Boot, React, SQL</p>
-                <div class="projeto-links">
-                    <a href="https://github.com/PedroMikhael/medical-clinic-spring-api" target="_blank" class="btn">Ver no GitHub</a>
-                </div>
-            </div>
-
-            <div class="projeto-card">
-                <img src="media/JogoTabuleiroCapa.png" alt="Imagem do Jogo de Tabuleiro">
-                <h3>Jogo de Tabuleiro com Design Patterns</h3>
-                <p>Jogo em Java refatorado com foco em arquitetura de software, aplicando padrões como Facade, Singleton, Factory e Strategy.</p>
-                <p class="tech-stack"><strong>Tecnologias:</strong> Java, Git, Design Patterns, SonarQube</p>
-                <div class="projeto-links">
-                    <a href="https://github.com/PedroMikhael/BoardGame" target="_blank" class="btn">Ver no GitHub</a>
-                </div>
-            </div>
-
-            <div class="projeto-card">
-                <img src="media/SistemaDeALuosCapa.png" alt="Imagem do Sistema de Avaliação">
-                <h3>Sistema de Avaliação de Alunos</h3>
-                <p>Sistema em Java que gerencia e corrige gabaritos de provas, gerando relatórios de notas e médias com persistência em arquivos.</p>
-                <p class="tech-stack"><strong>Tecnologias:</strong> Java, Git, Manipulação de Arquivos, SonaQube</p>
-                <div class="projeto-links">
-                    <a href="https://github.com/PedroMikhael/ExamEvaluator" target="_blank" class="btn">Ver no GitHub</a>
-                </div>
-            </div>
-
+        <div class="projeto-card" data-aos="fade-up">
+          <img src="media/SistemaHospitalar.png" alt="Imagem do Projeto Hospitalar" />
+          <h3>Sistema de Gestão Hospitalar</h3>
+          <p>Aplicação full-stack com Spring Boot para gerenciamento de pacientes, médicos, login, agendamento e avaliações.</p>
+          <p class="tech-stack"><strong>Tecnologias:</strong> Java, Spring Boot, React, SQL</p>
+          <div class="projeto-links">
+            <a href="https://github.com/PedroMikhael/medical-clinic-spring-api" target="_blank" class="btn">Ver no GitHub</a>
+            <a href="https://mediconnect-system.vercel.app" target="_blank" class="btn">Ver Projeto Online</a>
+          </div>
         </div>
+
+        <div class="projeto-card" data-aos="fade-up">
+          <img src="media/JogoTabuleiroCapa.png" alt="Imagem do Jogo de Tabuleiro" />
+          <h3>Jogo de Tabuleiro com Design Patterns</h3>
+          <p>Jogo em Java refatorado com foco em arquitetura de software, aplicando padrões como Facade, Singleton, Factory e Strategy.</p>
+          <p class="tech-stack"><strong>Tecnologias:</strong> Java, Git, Design Patterns, SonarQube</p>
+          <div class="projeto-links">
+            <a href="https://github.com/PedroMikhael/BoardGame" target="_blank" class="btn">Ver no GitHub</a>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-aos="fade-up">
+          <img src="media/SistemaDeALuosCapa.png" alt="Imagem do Sistema de Avaliação" />
+          <h3>Sistema de Avaliação de Alunos</h3>
+          <p>Sistema em Java que gerencia e corrige gabaritos de provas, gerando relatórios de notas e médias com persistência em arquivos.</p>
+          <p class="tech-stack"><strong>Tecnologias:</strong> Java, Git, Manipulação de Arquivos, SonarQube</p>
+          <div class="projeto-links">
+            <a href="https://github.com/PedroMikhael/ExamEvaluator" target="_blank" class="btn">Ver no GitHub</a>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <section id="contato" class="hidden">
-        <h2>Vamos Conversar?</h2>
-        <p>Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato!</p>
-        <div class="contato-info">
-            <p><i class="fa-solid fa-envelope"></i> pedromikhaelsouza@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> (85) 99254-3558</p>
-        </div>
+      <h2>Vamos Conversar?</h2>
+      <p>Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato!</p>
+      <div class="contato-info">
+        <p><i class="fa-solid fa-envelope"></i> pedromikhaelsouza@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> (85) 99254-3558</p>
+      </div>
     </section>
-</main>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Pedro Mikhael. Todos os direitos reservados.</p>
-    </footer>
-    
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Pedro Mikhael. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
